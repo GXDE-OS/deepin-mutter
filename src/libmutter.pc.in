@@ -1,0 +1,13 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+girdir=@libdir@/deepin-mutter
+typelibdir=@libdir@/deepin-mutter
+
+Name: libdeepin-mutter
+Description: Mutter window manager library for deepin desktop environment
+Requires: gsettings-desktop-schemas gtk+-3.0 @CLUTTER_PACKAGE@ x11
+Version: @VERSION@
+Libs: -L${libdir} -ldeepin-mutter
+Cflags: -I${includedir}/deepin-mutter
